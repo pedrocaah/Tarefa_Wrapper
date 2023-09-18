@@ -1,30 +1,32 @@
+import java.util.Scanner;
+
 public class Mod9 {
     public static void main(String[] args) {
 
         System.out.println("Olá Tutores!");
 
-        long cel = 11940028922l;
-        System.out.println(cel);
+        System.out.println("Tarefa conversão primitivo para wrapper\n");
 
-        Long cell = 11940028922L;
-        System.out.println(cell);
+        Scanner sc = new Scanner(System.in);
+        long cel = sc.nextLong();
+
+        Long cell = cel;
+        System.out.println("wrapper " + cell + "\n");
 
         ///////////////////////////////////
+
+        System.out.println("Tarefa casting\n");
 
         int num = 123456789;
 
         //casting explicito
-        System.out.println(num);
+        System.out.println("valor para casting em int " + num);
 
         short num1 = (short) num;
-        System.out.println(num1);
+        System.out.println("casting explicito em int p/ short " + num1);
 
         //casting implicito
         long num2 = num;
-        System.out.println(num2);
-
-
-
-
+        System.out.println("casting implicito em int p/ long " + num2);
     }
 }
